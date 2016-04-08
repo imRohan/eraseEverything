@@ -40,6 +40,14 @@ chrome.runtime.onMessage.addListener(
 				(function fade() {
 					(_targetParentStyle.opacity -= .1) < 0 ? _targetParentStyle.display = "none" : setTimeout(fade, 40)
 				})();
+
+				var _parents = getParents(event.target);
+
+				for(i = 0; i <= _parents.length; i++){
+					if(_parents[i].tagName == "head"){
+						console.log(_parents[i]);
+					}
+				}
 			}
 		}
 
@@ -69,10 +77,7 @@ chrome.runtime.onMessage.addListener(
 					_defaultAttributes["href"] = _target.parentElement.getAttribute('href');
 					_target.parentElement.setAttribute('href', "#");
 				}
-				// var _parents = getParents(event.target);
 
-				// console.log(_parents);
-				
 				addBorder(event);
 			}
 		}
