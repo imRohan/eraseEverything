@@ -4,7 +4,7 @@
 Erase Everything is a Google Chrome extension which allowers users to easily remove elements from a website with one click. It was built to help users get past paywalls.
 
 ![demoGif](http://i.imgur.com/uV4j17j.gif)
-##ToDo
+## ToDo
 
 - Expand link recognition and replacement
 - Block onClick events, or page redirects 
@@ -19,7 +19,7 @@ Download the zip archive and load as an unpacked extension
 
 Contributions are more than welcome. I'd love to hear any feedback, suggestions, pull requests, issues, bugs, complaints, abuse or otherwise.
 
-##MIT License
+## MIT License
 
 
 Copyright (c) 2016 Rohan Likhite
